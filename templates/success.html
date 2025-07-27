@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Success - Westernn</title>
+</head>
+<body>
+    <h2>✅ Payment Breakdown</h2>
+    <p><strong>Currency:</strong> {{ crypto }}</p>
+    <p><strong>Recipient Will Receive:</strong> {{ send_amount }} {{ crypto }}</p>
+    <p><strong>Commission (4%):</strong> {{ commission_amount }} {{ crypto }}</p>
+    <hr>
+    <p><strong>Send this amount to user wallet:</strong><br>{{ recipient_wallet }}</p>
+    <p><strong>Send 4% commission to:</strong><br>{{ commission_wallet }}</p>
+</body>
+</html>
