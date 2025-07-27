@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Gateway - Westernn</title>
+</head>
+<body>
+    <h2>Pay with Card or Crypto</h2>
+    <form method="post" action="/process">
+        <label>Choose Crypto:</label><br>
+        <select name="crypto" required>
+            <option>BTC</option>
+            <option>USDT</option>
+            <option>ETH</option>
+            <option>XRP</option>
+            <option>SOL</option>
+            <option>BCH</option>
+        </select><br><br>
+
+        <label>Recipient Wallet Address:</label><br>
+        <input type="text" name="recipient_wallet" required><br><br>
+
+        <label>Amount to Send:</label><br>
+        <input type="number" name="amount" step="0.0001" required><br><br>
+
+        <button type="submit">Proceed</button>
+    </form>
+</body>
+</html>
